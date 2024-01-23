@@ -4,21 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>Example Website</title>
     <style>
-        /* Add your custom styles here */
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-            background-color: #f4f4f4;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+            color: #333;
         }
 
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px;
+            padding: 10px 0;
             text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #777;
         }
 
         section {
@@ -31,7 +51,7 @@
 
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 10px 0;
             background-color: #333;
             color: #fff;
         }
@@ -41,16 +61,36 @@
 <body>
 
     <header>
-        <h1>Your Page Title</h1>
+        <h1>Example Website</h1>
     </header>
 
-    <section>
-        <h2>Welcome to Your Website!</h2>
-        <p>This is a simple HTML page. Customize it as per your needs.</p>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Example Website. We are dedicated to providing high-quality services to our clients.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Design</li>
+            <li>Graphic Design</li>
+            <li>Digital Marketing</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us for any inquiries or collaborations.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
+        <p>&copy; 2024 Example Website. All rights reserved.</p>
     </footer>
 
 </body>
